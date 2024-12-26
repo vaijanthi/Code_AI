@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sign.css" />
+    <title>CodeAnt AI</title>
+  </head>
+  <body>
+    <div class="auth-form">
+      <div class="intro"></div>
+      <div class="auth-container">
+        <div class="container">
+          <div class="header">
+            <span class="logo">
+              <img src="./images/codeantLogo.svg" alt="CodeAnt Logo" />
+              <h2>CodeAnt AI</h2>
+            </span>
+            <h1>Welcome to CodeAnt AI</h1>
+          </div>
+          <div class="tabs">
+            <button class="tab active" onclick="showTab('saas')">SAAS</button>
+            <button class="tab" onclick="showTab('selfHosted')">
+              Self Hosted
+            </button>
+          </div>
+          <div class="tab-content" id="saas">
+            <button class="auth-button" onclick="navigate('/')">
+              <img src="./images/github.png" alt="Github" />
+              <p>Sign in with Github</p>
+            </button>
+            <button class="auth-button" onclick="navigate('/')">
+              <img src="./images/bitbucket.png" alt="Bitbucket" />
+              <p>Sign in with Bitbucket</p>
+            </button>
+            <button class="auth-button" onclick="navigate('/')">
+              <img src="./images/azure_devops.png" alt="Azure Devops" />
+              <p>Sign in with Azure Devops</p>
+            </button>
+            <button class="auth-button" onclick="navigate('/')">
+              <img src="./images/gitlab.png" alt="GitLab" />
+              <p>Sign in with GitLab</p>
+            </button>
+          </div>
+          <div class="tab-content hidden" id="selfHosted">
+            <button class="auth-button" onclick="navigate('/')">
+              <img src="./images/gitlab.png" alt="GitLab" />
+              <p>Sign in with Gitlab</p>
+            </button>
+            <button class="auth-button" onclick="navigate('/')">
+              <img src="./images/sso.png" alt="SSO" />
+              <p>Sign in with SSO</p>
+            </button>
+          </div>
+        </div>
+        <p>
+          By signing up you agree to the
+          <a class="font-bold" href="#">Privacy Policy.</a>
+        </p>
+      </div>
+    </div>
+    <script src="sign.js"></script>
+  </body>
+</html>

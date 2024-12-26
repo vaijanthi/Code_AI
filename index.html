@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <div class="main">
+      <div class="sidebar">
+        <div class="sidebar-logo">
+          <h2>CodeAnt AI</h2>
+        </div>
+        <div class="user-option">
+          <select name="username" id="username">
+            <option value="utkarshdhairyapanwar" selected>
+              utkarsh dhairya panwar
+            </option>
+            <option value="vaijanthi">Vaijanthi</option>
+          </select>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <a href="./index.html">Repositories</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-code"></i>
+              <a href="./Shortcuts.html">AI Code Review</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-cloud"></i>
+              <a href="./">Cloud Security</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-shield-halved"></i>
+              <a href="./Events.html">Security Scanning</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-gear"></i>
+              <a href="./">Setting</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logout">
+          <li>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a href="./sign.html">logout</a>
+          </li>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-header">
+          <div class="heading">
+            <h1>Respositories</h1>
+            <p>2 Total respositories</p>
+          </div>
+          <div class="buttons">
+            <div class="btn">
+              <i class="fa-solid fa-arrows-rotate"></i
+              ><a href="">Refresh All</a>
+            </div>
+            <div class="btn">
+              <i class="fa-solid fa-plus"></i>Add Repositories
+            </div>
+          </div>
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-plus"></i>
+          <input
+            type="text"
+            name="search-repo"
+            placeholder="Search Repositories"
+          />
+        </div>
+        <div class="repos-container">
+          <li>
+            <a href="https://github.com/UtkarshDhairyaPanwar/hi">
+              <div class="title">
+                <p>hi</p>
+                <p class="badge">Public</p>
+              </div>
+              <div class="desc">
+                <p>Javascript</p>
+                <p>4643 KB</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/UtkarshDhairyaPanwar/portfolio">
+              <div class="title">
+                <p>portofolio</p>
+                <p class="badge">Public</p>
+              </div>
+              <div class="desc">
+                <p>Javascript</p>
+                <p>8894 KB</p>
+              </div>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
